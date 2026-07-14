@@ -29,7 +29,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.example.pf_secondlife_client.network.ImageUrlBuilder
+import com.example.pf_secondlife_client.ui.ImageUrlBuilder
 import com.example.pf_secondlife_client.ui.imageManagement.SelectedImage
 
 @Composable

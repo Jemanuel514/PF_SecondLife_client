@@ -18,7 +18,7 @@ import com.example.pf_secondlife_client.network.api.uploads.UploadsApi
 import com.example.pf_secondlife_client.network.api.uploads.UploadsApiImpl
 import com.example.pf_secondlife_client.network.api.users.UsersApi
 import com.example.pf_secondlife_client.network.api.users.UsersApiImpl
-import com.example.pf_secondlife_client.network.httpClient.HttpClientFactory
+import com.example.pf_secondlife_client.network.HttpClientFactory
 import com.example.pf_secondlife_client.data.session.tokenProviders.DataStoreTokenProvider
 import com.example.pf_secondlife_client.data.session.tokenProviders.TokenProvider
 import com.example.pf_secondlife_client.ui.imageManagement.bytesReaders.ImageBytesReader

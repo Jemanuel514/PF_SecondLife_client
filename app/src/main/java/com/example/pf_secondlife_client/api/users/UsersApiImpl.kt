@@ -1,4 +1,4 @@
-package com.example.pf_secondlife_client.network.api.users
+package com.example.pf_secondlife_client.api.users
 
 import com.example.pf_secondlife_client.data.session.tokenProviders.TokenProvider
 import com.example.pf_secondlife_client.domain.models.*

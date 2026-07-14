@@ -8,7 +8,7 @@ import com.example.pf_secondlife_client.domain.models.PostRegisterResponse
 import com.example.pf_secondlife_client.network.api.users.UsersApi
 import com.example.pf_secondlife_client.data.session.tokenProviders.TokenProvider
 import com.example.pf_secondlife_client.domain.models.GetPostResponse
-import com.example.pf_secondlife_client.network.httpClient.configs.invalidateBearerTokenCache
+import com.example.pf_secondlife_client.network.configs.invalidateBearerTokenCache
 import io.ktor.client.HttpClient
 
 class UsersRepositoryImpl(

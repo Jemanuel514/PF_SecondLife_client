@@ -1,4 +1,4 @@
-package com.example.pf_secondlife_client.network.api.posts
+package com.example.pf_secondlife_client.api.posts
 
 object PostsEndpoints {
     const val BASE = "/posts"

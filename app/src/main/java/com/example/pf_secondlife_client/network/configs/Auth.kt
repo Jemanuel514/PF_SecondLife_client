@@ -1,4 +1,4 @@
-package com.example.pf_secondlife_client.network.httpClient.configs
+package com.example.pf_secondlife_client.network.configs
 
 import com.example.pf_secondlife_client.data.session.tokenProviders.TokenProvider
 import io.ktor.client.HttpClientConfig

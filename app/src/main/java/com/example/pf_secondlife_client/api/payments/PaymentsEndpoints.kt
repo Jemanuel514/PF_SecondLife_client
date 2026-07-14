@@ -1,4 +1,4 @@
-package com.example.pf_secondlife_client.network.api.payments
+package com.example.pf_secondlife_client.api.payments
 
 import com.example.pf_secondlife_client.network.api.posts.PostsEndpoints
 

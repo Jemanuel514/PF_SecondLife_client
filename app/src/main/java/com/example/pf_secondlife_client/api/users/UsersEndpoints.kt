@@ -1,4 +1,4 @@
-package com.example.pf_secondlife_client.network.api.users
+package com.example.pf_secondlife_client.api.users
 
 object UsersEndpoints {
     const val REGISTER = "/register"

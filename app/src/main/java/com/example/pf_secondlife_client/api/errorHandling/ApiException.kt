@@ -1,4 +1,4 @@
-package com.example.pf_secondlife_client.network.api.errorHandling
+package com.example.pf_secondlife_client.api.errorHandling
 
 sealed class ApiException(message: String) : Exception(message) {
     data class BadRequest(val body: String) : ApiException(body)

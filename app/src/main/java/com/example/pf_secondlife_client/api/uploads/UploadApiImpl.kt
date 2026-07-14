@@ -1,4 +1,4 @@
-package com.example.pf_secondlife_client.network.api.uploads
+package com.example.pf_secondlife_client.api.uploads
 
 import com.example.pf_secondlife_client.data.session.tokenProviders.TokenProvider
 import com.example.pf_secondlife_client.network.api.errorHandling.safeApiCall

@@ -28,7 +28,7 @@ import coil.compose.AsyncImage
 import com.example.pf_secondlife_client.domain.models.GetPostResponse
 import com.example.pf_secondlife_client.domain.valuesSets.ArticleType
 import com.example.pf_secondlife_client.domain.valuesSets.PostState
-import com.example.pf_secondlife_client.network.ImageUrlBuilder
+import com.example.pf_secondlife_client.ui.ImageUrlBuilder
 import com.example.pf_secondlife_client.ui.components.ArticleTypeFilterRow
 import java.text.SimpleDateFormat
 import java.util.Date
