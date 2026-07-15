@@ -1,11 +1,11 @@
 package com.example.pf_secondlife_client.data.users
 
+import com.example.pf_secondlife_client.api.users.UsersApi
 import com.example.pf_secondlife_client.domain.models.GetUserResponse
 import com.example.pf_secondlife_client.domain.models.PostLoginRequest
 import com.example.pf_secondlife_client.domain.models.PostLoginResponse
 import com.example.pf_secondlife_client.domain.models.PostRegisterRequest
 import com.example.pf_secondlife_client.domain.models.PostRegisterResponse
-import com.example.pf_secondlife_client.network.api.users.UsersApi
 import com.example.pf_secondlife_client.data.session.tokenProviders.TokenProvider
 import com.example.pf_secondlife_client.domain.models.GetPostResponse
 import com.example.pf_secondlife_client.network.configs.invalidateBearerTokenCache

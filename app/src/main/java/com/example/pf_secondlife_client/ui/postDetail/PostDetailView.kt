@@ -16,7 +16,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.example.pf_secondlife_client.domain.models.GetPostResponse
-import com.example.pf_secondlife_client.ui.ImageUrlBuilder
+import com.example.pf_secondlife_client.ui.imageManagement.ImageUrlBuilder
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
 import java.text.SimpleDateFormat

@@ -1,4 +1,4 @@
-package com.example.pf_secondlife_client.ui
+package com.example.pf_secondlife_client.ui.imageManagement
 
 import com.example.pf_secondlife_client.network.ApiConfig
 

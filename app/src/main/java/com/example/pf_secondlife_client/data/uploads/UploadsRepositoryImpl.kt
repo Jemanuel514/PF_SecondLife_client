@@ -1,6 +1,6 @@
 package com.example.pf_secondlife_client.data.uploads
 
-import com.example.pf_secondlife_client.network.api.uploads.UploadsApi
+import com.example.pf_secondlife_client.api.uploads.UploadsApi
 
 class UploadsRepositoryImpl(private val api: UploadsApi) : UploadsRepository {
 

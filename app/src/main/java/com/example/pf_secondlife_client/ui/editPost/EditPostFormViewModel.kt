@@ -2,13 +2,13 @@ package com.example.pf_secondlife_client.ui.editPost
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.pf_secondlife_client.api.errorHandling.ApiException
 import com.example.pf_secondlife_client.data.posts.PostsRepository
 import com.example.pf_secondlife_client.data.uploads.UploadsRepository
 import com.example.pf_secondlife_client.domain.models.PatchPostRequest
 import com.example.pf_secondlife_client.domain.models.PutPostRequest
 import com.example.pf_secondlife_client.domain.valuesSets.ArticleType
 import com.example.pf_secondlife_client.domain.valuesSets.PostState
-import com.example.pf_secondlife_client.network.api.errorHandling.ApiException
 import com.example.pf_secondlife_client.ui.imageManagement.SelectedImage
 import com.example.pf_secondlife_client.ui.imageManagement.bytesReaders.ImageBytesReader
 import kotlinx.coroutines.CoroutineScope

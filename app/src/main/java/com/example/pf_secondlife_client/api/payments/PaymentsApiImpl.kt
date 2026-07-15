@@ -8,8 +8,7 @@ import io.ktor.client.call.body
 import io.ktor.client.request.post
 import io.ktor.client.request.setBody
 
-class PaymentsApiImpl(private val client: HttpClient, private val tokenProvider: TokenProvider) :
-    com.example.pf_secondlife_client.api.payments.PaymentsApi {
+class PaymentsApiImpl(private val client: HttpClient, private val tokenProvider: TokenProvider) : PaymentsApi {
 
     override suspend fun createPayment(postId: String, request: PostPaymentRequest): Result<Unit> {
         return safeApiCall(tokenProvider) {

@@ -36,7 +36,7 @@ import androidx.lifecycle.compose.LifecycleEventEffect
 import coil.compose.AsyncImage
 import com.example.pf_secondlife_client.domain.models.GetPostResponse
 import com.example.pf_secondlife_client.domain.valuesSets.ArticleType
-import com.example.pf_secondlife_client.ui.ImageUrlBuilder
+import com.example.pf_secondlife_client.ui.imageManagement.ImageUrlBuilder
 import com.example.pf_secondlife_client.ui.components.ArticleTypeFilterRow
 import org.koin.androidx.compose.koinViewModel
 

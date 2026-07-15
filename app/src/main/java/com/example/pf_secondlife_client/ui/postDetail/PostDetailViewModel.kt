@@ -2,10 +2,10 @@ package com.example.pf_secondlife_client.ui.postDetail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.pf_secondlife_client.api.errorHandling.ApiException
 import com.example.pf_secondlife_client.data.posts.PostsRepository
 import com.example.pf_secondlife_client.data.session.sessionManagers.SessionManager
 import com.example.pf_secondlife_client.domain.valuesSets.PostState
-import com.example.pf_secondlife_client.network.api.errorHandling.ApiException
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

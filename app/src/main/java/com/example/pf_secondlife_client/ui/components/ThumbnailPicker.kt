@@ -29,7 +29,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.example.pf_secondlife_client.ui.ImageUrlBuilder
+import com.example.pf_secondlife_client.ui.imageManagement.ImageUrlBuilder
 import com.example.pf_secondlife_client.ui.imageManagement.SelectedImage
 
 @Composable
@@ -40,7 +40,6 @@ fun ThumbnailPicker(
 ) {
     val context = LocalContext.current
     var showSourceDialog by remember { mutableStateOf(false) }
-    var pendingCameraLaunch by remember { mutableStateOf(false) }
 
     val galleryLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.PickVisualMedia()

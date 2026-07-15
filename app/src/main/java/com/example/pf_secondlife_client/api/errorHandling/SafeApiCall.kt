@@ -13,20 +13,20 @@ suspend fun <T> safeApiCall(tokenProvider: TokenProvider, block: suspend () -> T
     } catch (e: ClientRequestException) {
         val body = e.response.bodyAsText()
         val exception = when (e.response.status) {
-            HttpStatusCode.BadRequest -> _root_ide_package_.com.example.pf_secondlife_client.api.errorHandling.ApiException.BadRequest(body)
+            HttpStatusCode.BadRequest -> ApiException.BadRequest(body)
             HttpStatusCode.Unauthorized -> {
                 tokenProvider.clearSession()
-                _root_ide_package_.com.example.pf_secondlife_client.api.errorHandling.ApiException.Unauthorized(body)
+                ApiException.Unauthorized(body)
             }
-            HttpStatusCode.Forbidden -> _root_ide_package_.com.example.pf_secondlife_client.api.errorHandling.ApiException.Forbidden(body)
-            HttpStatusCode.NotFound -> _root_ide_package_.com.example.pf_secondlife_client.api.errorHandling.ApiException.NotFound(body)
-            HttpStatusCode.Conflict -> _root_ide_package_.com.example.pf_secondlife_client.api.errorHandling.ApiException.Conflict(body)
-            else -> _root_ide_package_.com.example.pf_secondlife_client.api.errorHandling.ApiException.Unknown(e.response.status.value, body)
+            HttpStatusCode.Forbidden -> ApiException.Forbidden(body)
+            HttpStatusCode.NotFound -> ApiException.NotFound(body)
+            HttpStatusCode.Conflict -> ApiException.Conflict(body)
+            else -> ApiException.Unknown(e.response.status.value, body)
         }
         Result.failure(exception)
     } catch (e: ServerResponseException) {
-        Result.failure(_root_ide_package_.com.example.pf_secondlife_client.api.errorHandling.ApiException.ServerError(e.response.status.value))
+        Result.failure(ApiException.ServerError(e.response.status.value))
     } catch (e: IOException) {
-        Result.failure(_root_ide_package_.com.example.pf_secondlife_client.api.errorHandling.ApiException.Network(e))
+        Result.failure(ApiException.Network(e))
     }
 }

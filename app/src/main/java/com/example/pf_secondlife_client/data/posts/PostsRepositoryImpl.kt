@@ -1,11 +1,11 @@
 package com.example.pf_secondlife_client.data.posts
 
+import com.example.pf_secondlife_client.api.posts.PostsApi
 import com.example.pf_secondlife_client.domain.models.GetPostResponse
 import com.example.pf_secondlife_client.domain.models.PatchPostRequest
 import com.example.pf_secondlife_client.domain.models.PostPostRequest
 import com.example.pf_secondlife_client.domain.models.PostPostResponse
 import com.example.pf_secondlife_client.domain.models.PutPostRequest
-import com.example.pf_secondlife_client.network.api.posts.PostsApi
 
 class PostsRepositoryImpl(private val api: PostsApi) : PostsRepository {
 

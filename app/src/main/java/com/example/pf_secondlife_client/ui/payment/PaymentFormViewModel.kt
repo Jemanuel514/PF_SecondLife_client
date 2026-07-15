@@ -2,13 +2,13 @@ package com.example.pf_secondlife_client.ui.payment
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.pf_secondlife_client.api.errorHandling.ApiException
 import com.example.pf_secondlife_client.data.payments.PaymentsRepository
 import com.example.pf_secondlife_client.data.posts.PostsRepository
 import com.example.pf_secondlife_client.domain.models.PatchPostRequest
 import com.example.pf_secondlife_client.domain.models.PostPaymentRequest
 import com.example.pf_secondlife_client.domain.valuesSets.CardType
 import com.example.pf_secondlife_client.domain.valuesSets.PostState
-import com.example.pf_secondlife_client.network.api.errorHandling.ApiException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.SupervisorJob

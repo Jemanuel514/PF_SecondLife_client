@@ -1,5 +1,13 @@
 package com.example.pf_secondlife_client.application
 
+import com.example.pf_secondlife_client.api.payments.PaymentsApi
+import com.example.pf_secondlife_client.api.payments.PaymentsApiImpl
+import com.example.pf_secondlife_client.api.posts.PostsApi
+import com.example.pf_secondlife_client.api.posts.PostsApiImpl
+import com.example.pf_secondlife_client.api.uploads.UploadsApi
+import com.example.pf_secondlife_client.api.uploads.UploadsApiImpl
+import com.example.pf_secondlife_client.api.users.UsersApi
+import com.example.pf_secondlife_client.api.users.UsersApiImpl
 import com.example.pf_secondlife_client.data.payments.PaymentsRepository
 import com.example.pf_secondlife_client.data.payments.PaymentsRepositoryImpl
 import com.example.pf_secondlife_client.data.posts.PostsRepository
@@ -10,14 +18,6 @@ import com.example.pf_secondlife_client.data.uploads.UploadsRepository
 import com.example.pf_secondlife_client.data.uploads.UploadsRepositoryImpl
 import com.example.pf_secondlife_client.data.users.UsersRepository
 import com.example.pf_secondlife_client.data.users.UsersRepositoryImpl
-import com.example.pf_secondlife_client.network.api.payments.PaymentsApi
-import com.example.pf_secondlife_client.network.api.payments.PaymentsApiImpl
-import com.example.pf_secondlife_client.network.api.posts.PostsApi
-import com.example.pf_secondlife_client.network.api.posts.PostsApiImpl
-import com.example.pf_secondlife_client.network.api.uploads.UploadsApi
-import com.example.pf_secondlife_client.network.api.uploads.UploadsApiImpl
-import com.example.pf_secondlife_client.network.api.users.UsersApi
-import com.example.pf_secondlife_client.network.api.users.UsersApiImpl
 import com.example.pf_secondlife_client.network.HttpClientFactory
 import com.example.pf_secondlife_client.data.session.tokenProviders.DataStoreTokenProvider
 import com.example.pf_secondlife_client.data.session.tokenProviders.TokenProvider
